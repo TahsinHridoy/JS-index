@@ -31,10 +31,11 @@
 // }
 // console.log(z)
 
-var select = document.querySelector("select");
-var pera = document.querySelector("p");
+// var select = document.querySelector("select");
+// var pera = document.querySelector("p");
 
-select.addEventListener('change', setWheather);
+
+// select.addEventListener('change', setWheather);
 
 // function setWheather() {
 //     var choice = select.value;
@@ -66,26 +67,26 @@ select.addEventListener('change', setWheather);
         
 
 // }
-let contacts = ['jerry:24', "tom:45",'perry:78',"iby:56"];
-const pera = document.querySelector('p')
-const input = document.querySelector("input")
-const button = document.querySelector('button')
+// let contacts = ['jerry:24', "tom:45",'perry:78',"iby:56"];
+// const pera = document.querySelector('p')
+// const input = document.querySelector("input")
+// const button = document.querySelector('button')
 
-button.addEventListener('click', function() {
-    let tasnim = input.value.toLowerCase();
-    input.value ="";
-    input.focus();
-    let i;
-    for(i= 0; i< contacts.leangth; i++) {
-        let spliteContact = contacts[i].split(':');
-        if(spliteContact[0].toLowerCase() === tasnim){
-            pera.textContent = spliteContact[0] + "\'s number is" + spliteContact[1] + ".";
+// button.addEventListener('click', function() {
+//     let tasnim = input.value.toLowerCase();
+//     input.value ="";
+//     input.focus();
+//     let i;
+//     for(i= 0; i< contacts.leangth; i++) {
+//         let spliteContact = contacts[i].split(':');
+//         if(spliteContact[0].toLowerCase() === tasnim){
+//             pera.textContent = spliteContact[0] + "\'s number is" + spliteContact[1] + ".";
 
-        }else if(i === contacts.lenght -1){
-            pera.textContent = "contact not found.";
-        }
-    }
-});
+//         }else if(i === contacts.lenght -1){
+//             pera.textContent = "contact not found.";
+//         }
+//     }
+// });
 
 // while (condition) {
     //code run here
@@ -98,3 +99,25 @@ button.addEventListener('click', function() {
     // code to run 
     //final-expression
 // }while(condition)
+
+// let i =0;
+// let j = 12
+// while (i<= j) {
+//     document.write(i+1,"<br>");
+//     i++;
+// }
+
+const cats = ['Bill', 'Jeff', 'Pete', 'Biggles', 'Jasmin'];
+let info = 'My cats are called ';
+const para = document.querySelector('p');
+let i = 0;
+
+do{
+    if(i === cats.length - 1){
+        info +="and" + cats[i] + ".";
+    }else{
+        info += cats[i] + ",";
+    }
+    i++;
+}while(i < cats.length);
+console.log(i);
